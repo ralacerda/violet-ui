@@ -4,7 +4,7 @@ name: Build and Publish Storybook to GitHub Pages
 
 on:
   # Event for the workflow to run on
-  - push:
+  push:
     branches:
       - 'main' # Replace with the branch you want to deploy from
 
