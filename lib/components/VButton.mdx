@@ -1,0 +1,42 @@
+import { Primary, Meta, Controls, ColorPalette, ColorItem, Stories } from "@storybook/blocks";
+
+import * as VButton from "./VButton.stories.ts";
+
+<Meta of={VButton} />
+
+# Button
+
+This is a simple button.
+It has only two possible colors, a primary, and a secondary. 
+
+  <ColorPalette>
+    <ColorItem
+      title="Primary"
+      colors={{
+        Default: '#9147ff',
+        Hover: '#772ce8',
+        Active: '#5c0dd3',
+      }}
+    />
+    <ColorItem
+      title="Secondary"
+      colors={{
+      Default: "#8557b3",
+      Hover: "#6f4a94",
+      Active: "#553a70",
+      }}
+    />
+  </ColorPalette>
+
+## Icon
+
+You can only use Material Symbol icons. The string prop should not include the 'material-symbols:' part.
+
+So use `done` instead of `material-symbols:done`.
+
+We are using Iconify Vue2 component. 
+You can find a list of all Material Symbol icons on [iconify page](https://icon-sets.iconify.design/material-symbols/). 
+
+<Primary />
+<Controls />
+<Stories />
